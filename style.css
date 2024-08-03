@@ -1,4 +1,4 @@
-/* Genel Stil Ayarları */
+/* Body ve genel ayarlar */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,12 +7,14 @@ body {
     color: #e0e0e0;
 }
 
+/* Container ayarları */
 .container {
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto; /* Merkezleme */
     padding: 20px;
 }
 
+/* Header ayarları */
 header {
     text-align: center;
     padding: 20px;
@@ -68,8 +70,6 @@ header h1 {
     }
 }
 
-
-
 .fade-in {
     opacity: 0;
     animation: fadeIn 1.5s forwards, bounceIn 1s ease-out;
@@ -95,4 +95,15 @@ header h1 {
 @keyframes zoomIn {
     from { transform: scale(1); }
     to { transform: scale(1.05); }
+}
+
+/* İçerik hizalaması */
+.container {
+    padding-left: 20px; /* Sol kenar boşluğu */
+    padding-right: 20px; /* Sağ kenar boşluğu */
+}
+
+header {
+    padding-left: 20px; /* Header'ın sol kenar boşluğu */
+    padding-right: 20px; /* Header'ın sağ kenar boşluğu */
 }
